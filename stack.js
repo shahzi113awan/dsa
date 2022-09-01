@@ -1,5 +1,4 @@
-
-  class Stack{
+class Stack{
     constructor(){
         this.items = []
     }
@@ -41,17 +40,33 @@ class StackObject {
             return undefined
         }
         else{
-             let res =  this.items[this.count-1]
-            delete res[this.count]
+
+            let res =  this.items[this.count-1]
+            delete this.items[this.count-1]
             this.count--
             return res
         }
     }
     print(){
-        return this.items
+        if(this.isEmpty){
+            return "empty"
+        }
+        else{
+
+            return this.items
+        }
     }
     isEmpty(){
         return this.count === 0
+    }
+    peek(){
+        return this.items[this.count-1]
+    }
+    size(){
+        return this.count
+    }
+    clear(){
+        return delete this.items
     }
 }
 
