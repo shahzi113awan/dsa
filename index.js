@@ -1,13 +1,16 @@
  
 const {  Stack,StackObject} = require('./stack')
 const { Queue } = require('./Queue')
+const { Dequeue } = require('./Dqueue')
 
-const stack = new Queue();
- stack.enqueu(1)
- stack.enqueu(2)
- stack.enqueu(3)
- stack.dequeu()
- 
-console.log(stack.isEmpty())
+const stack = new Dequeue();
+stack.addBack(1)
+stack.addBack(2)
+stack.addBack(3)
+
+stack.addFront(5)
+//  stack.removeBack()
+//  stack.removeFront()
 console.log(stack.print())
-console.log(stack.peek())
+console.log(stack.peekBack())
+// console.log(stack.peek())
