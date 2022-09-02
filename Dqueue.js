@@ -6,6 +6,7 @@ class Dequeue {
     }
     addFront(el) {
         if (this.isEmpty()) {
+            console.log("adding first node")
             this.addBack(el)
         }
         else if (this.lowestCount > 0) {
