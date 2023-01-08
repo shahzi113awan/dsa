@@ -6,6 +6,7 @@ class Stack{
         this.items.push(element)
     }
     pop(){
+        console.log(this.items)
         this.items.pop()
     }
     isEmpty(){
