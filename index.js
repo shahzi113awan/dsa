@@ -7,7 +7,8 @@ const stack = new Dequeue();
 stack.addBack(1)
 stack.addBack(2)
 stack.addBack(3)
-
+stack.addBack(78)
+stack.addfront(89)
 stack.addFront(5)
 //  stack.removeBack()
 //  stack.removeFront()
